@@ -54,7 +54,7 @@ Add these paths in `.vscode/c_cpp_properties.json`:
 
 ---
 
-## 2) Folder structure (what goes where)
+## 2) Folder structure
 
 ```
 YOUR_PROS_PROJECT/
@@ -87,7 +87,7 @@ If IntelliSense fails in VS Code, reload the window after setting paths.
 
 ---
 
-## 3) Quick smoke test (compile & run)
+## 3) Quick smoke test
 
 1. Put `ml_addon.hpp` in `include/ml_addon/`
 2. Put `ml_addon.cpp` in `src/`
@@ -142,7 +142,7 @@ Tips:
 
 ---
 
-## 5) Scaling features — why and how
+## 5) Scaling features
 
 Neural nets train best when features share similar ranges.
 Use `scale_stats.py`:
@@ -265,7 +265,7 @@ Use for **tiny on-robot learning** (safe adaptation).
 
 ---
 
-## 10) TFLite Micro — going further
+## 10) TFLite Micro 
 
 To run larger networks:
 
@@ -360,23 +360,6 @@ int main() {
     }
 }
 ```
-
----
-
-✅ **Final checklist**
-
-* `include/ml_addon/ml_addon.hpp` — ✅
-* `src/ml_addon.cpp` — ✅
-* `include/ml_addon/nn_weights.h` — ✅ after training
-* `CXXFLAGS += -std=gnu++17` in Makefile — ✅
-* Data tools (`collect_data.py`, etc.) — ✅
-
-
-
-
-
-
-
 
 ###  **LIBRARY FUNCTIONS**
 
